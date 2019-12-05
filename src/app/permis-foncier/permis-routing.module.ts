@@ -31,8 +31,6 @@ const routes: Routes = [
         redirectTo: '',
         pathMatch: 'full'
     },
-  { path: 'edit-permis', loadChildren: './edit-permis/edit-permis.module#EditPermisPageModule' },
-
 ];
 
 

@@ -5,18 +5,23 @@ import { AuthGuard } from './auth/services/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
+
   { path: 'splash-screen', loadChildren: './splash-screen/splash-screen.module#SplashScreenPageModule' },
+  
   { path: 'auth', loadChildren: './auth/auth.module#AuthPageModule' },
+  
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule'},
+
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'terrains', loadChildren: './terrains/terrains.module#TerrainsPageModule', canLoad: [AuthGuard]},
+
   { path: 'permis', loadChildren: './permis-foncier/permis-foncier.module#PermisFoncierPageModule', canLoad: [AuthGuard]},
+ 
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
 ];
