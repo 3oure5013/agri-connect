@@ -1,0 +1,54 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid style="height: 100%">
+        <ion-row class="ion-justify-content-center ion-align-items-center">
+            <ion-col  size-sm="6" offset-sm="3">
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Inscription</ion-card-title>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-list>
+                            <ion-item class="centre-item">
+                                <ion-img [src]="logo"></ion-img>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label position="floating">Nom</ion-label>
+                              <ion-input  type="name"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label position="floating">Prénom</ion-label>
+                              <ion-input  type="text"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label position="floating">Numéro de téléphone<ion-text color="danger">*</ion-text>
+                                </ion-label>
+                                <ion-input type="tel"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label position="floating">Mot de passe <ion-text color="danger">*</ion-text>
+                                </ion-label>
+                                <ion-input type="password" required></ion-input>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label position="floating">Confirmer mot de passe</ion-label>
+                              <ion-input  type="text"></ion-input>
+                            </ion-item>
+                            <div class="ion-padding">
+                                <ion-button   expand="block" color="warning">
+                                    <ion-icon slot="start" name="add"></ion-icon>
+                                    Inscription
+                                </ion-button>
+                            </div>
+                                
+                        </ion-list>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
