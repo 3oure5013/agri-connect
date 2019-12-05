@@ -5,17 +5,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PermisFoncierPage } from './permis-foncier.page';
-import { PermisRoutingModule } from './permis-routing.module';
+import { TerrainsPage } from './terrains.page';
+import { TerrainRoutingModule } from './terrain-routing.module';
 
 
-@NgModule({ 
+@NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PermisRoutingModule
+    TerrainRoutingModule
   ],
-  declarations: [PermisFoncierPage]
+  declarations: [TerrainsPage]
 })
-export class PermisFoncierPageModule {}
+export class TerrainsPageModule {}

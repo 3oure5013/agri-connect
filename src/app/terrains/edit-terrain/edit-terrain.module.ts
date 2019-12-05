@@ -5,17 +5,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PermisFoncierPage } from './permis-foncier.page';
-import { PermisRoutingModule } from './permis-routing.module';
+import { EditTerrainPage } from './edit-terrain.page';
 
+const routes: Routes = [
+  {
+    path: '',
+    component: EditTerrainPage
+  }
+];
 
-@NgModule({ 
+@NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PermisRoutingModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [PermisFoncierPage]
+  declarations: [EditTerrainPage]
 })
-export class PermisFoncierPageModule {}
+export class EditTerrainPageModule {}

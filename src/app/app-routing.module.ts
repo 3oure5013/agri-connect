@@ -8,11 +8,12 @@ const routes: Routes = [
     redirectTo: '/auth',
     pathMatch: 'full'
   },
+  { path: 'splash-screen', loadChildren: './splash-screen/splash-screen.module#SplashScreenPageModule' },
   { path: 'auth', loadChildren: './auth/auth.module#AuthPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule'},
-  { path: 'permis', loadChildren: './permis-foncier/permis-foncier.module#PermisFoncierPageModule', canLoad: [AuthGuard]},
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'splash-screen', loadChildren: './splash-screen/splash-screen.module#SplashScreenPageModule' },
+  { path: 'terrains', loadChildren: './terrains/terrains.module#TerrainsPageModule', canLoad: [AuthGuard]},
+  { path: 'permis', loadChildren: './permis-foncier/permis-foncier.module#PermisFoncierPageModule', canLoad: [AuthGuard]},
   {
     path: '**',
     redirectTo: '',
